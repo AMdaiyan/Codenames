@@ -1,0 +1,24 @@
+/* Method checks if the board is in one of the winning states -
+	 * 1) Assassin has been revealed.
+	 * 2) All the agents of either team are revealed.
+	 */
+
+	public boolean winState() {
+		boolean b = false;
+		if (_lastRevealed==_assassin) {
+			b=true; }
+		else if (_redAgents.size()==0 || _blueAgents.size()==0) {
+			b=true; }
+		return b;
+	}
+
+	/* Method that checks and updates a location when the Location's codename was selected,
+	 * returns if the Location contained the current team's agent(if the guess was made and 
+	 * the agent belonged to the team making the guess.)
+	 */
+
+	public boolean turnEnd() {
+		if (legalClue()) {
+
+		}
+	}
